@@ -1,0 +1,71 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "endTime": {
+            "bsonType": "date"
+        },
+        "eventCreator": {
+            "bsonType": "string"
+        },
+        "eventName": {
+            "bsonType": "string"
+        },
+        "eventNode": {
+            "bsonType": "string"
+        },
+        "invited": {
+            "bsonType": "long"
+        },
+        "invitees": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "inviteeStatus": {
+                        "bsonType": "string"
+                    },
+                    "username": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [
+                    "username",
+                    "inviteeStatus"
+                ],
+                "title": "Invitee"
+            }
+        },
+        "partition": {
+            "bsonType": "string"
+        },
+        "rsvpYes": {
+            "bsonType": "long"
+        },
+        "startTime": {
+            "bsonType": "date"
+        },
+        "upcoming": {
+            "bsonType": "bool"
+        },
+        "venueId": {
+            "bsonType": "long"
+        }
+    },
+    "required": [
+        "_id",
+        "partition",
+        "eventName",
+        "venueId",
+        "invited",
+        "rsvpYes",
+        "upcoming",
+        "startTime",
+        "endTime",
+        "eventCreator",
+        "eventNode"
+    ],
+    "title": "Event"
+}

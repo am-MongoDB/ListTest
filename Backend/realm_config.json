@@ -1,0 +1,7 @@
+{
+    "app_id": "events-hotni",
+    "config_version": 20210101,
+    "name": "Events",
+    "location": "US-VA",
+    "deployment_model": "LOCAL"
+}
